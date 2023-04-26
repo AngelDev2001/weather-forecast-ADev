@@ -1,0 +1,152 @@
+.TodaysHighlights{
+    width: 100%;
+    grid-area: TodaysHighlights;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgc-dark);
+}
+
+.TodaysHighlights-container{
+    width: 90%;
+    margin: 0 auto;
+    background-color: var(--bgc-dark);
+    /* background-color: gold; */
+    font-family: var(--first-font);
+    /* padding: 1rem; */
+    color: var(--color-light);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.TodaysHighlights__anex{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.5fr 1fr;
+    gap: 1.5rem 2rem;
+}
+
+.TodaysHighlights__anex>div{
+    background-color: var(--bgc-dark-light);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    color: var(--color-light);
+    text-align: center;
+}
+
+.wind__title,
+.humidity__title,
+.visibility__title,
+.pressure__title{
+    font-size: 1rem;
+    font-weight: 500;
+    flex: 1 1 0;
+}
+
+.wind__content,
+.humidity__content,
+.visibility__content,
+.pressure__content{
+    flex: 2 1 0;
+}
+
+.wind__value,
+.humidity__value,
+.visibility__value,
+.pressure__value{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.wind__unidad,
+.humidity__unidad,
+.visibility__unidad,
+.pressure__unidad{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.wind__orientation{
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.wind__icon{
+    background-color: var(--color-icon);
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+/* .wind__icon i{
+    transform: rotate(-45deg);
+} */
+
+.barraProgresoDiv{
+    width: 100%;
+    margin-top: 2rem;
+    position: relative;
+    color: var(--color-gray);
+    font-weight: 700;
+}
+
+.barraProgreso{
+    width: 100%;
+    background-color: var(--color-light);
+    height: 1rem;
+    align-self: flex-start;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.barraProgresoDiv::before{
+    content: '0';
+    position: absolute;
+    top: -1.25rem;
+    left: 0;
+}
+
+.barraProgresoDiv::after{
+    content: '100';
+    position: absolute;
+    top: -1.25rem;
+    right: 0;
+}
+
+
+.barraProgresoMed{
+    width: 100%;
+    position: relative;
+}
+
+.barraProgresoMed::before{
+    content: '50';
+    position: absolute;
+    top: -1.25rem;
+    right: 50%;
+}
+
+.barraProgresoMed::after{
+    content: '%';
+    position: absolute;
+    bottom: -1.25rem;
+    right: 0;
+}
+
+.barraProgresoContent{
+    width: 50%;
+    height: 1.5rem;
+    background-color: yellow;
+}

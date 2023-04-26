@@ -1,0 +1,61 @@
+.weatherFiveDays{
+    grid-area: weatherFiveDays;
+    width: 100%;
+    background-color: var(--bgc-dark);
+}
+
+.weatherFiveDays-container{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: var(--bgc-dark);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-family: var(--first-font);
+}
+
+.weatherFiveDays__days{
+    background-color: var(--bgc-dark-light);
+    padding: 1rem;
+    /* width: 120px; */
+}
+
+.weatherFiveDays__title{
+    color: var(--color-light);
+    font-size: .825rem;
+    text-align: center;
+}
+
+.weatherFiveDays__image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weatherFiveDays__image img{
+    width: 70%;
+}
+
+.temperatures{
+    display: flex;
+    font-size: .825rem;
+}
+
+.temperatures>p{
+    flex: 1 1 0;
+    /* font-size: .825rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temperatures-min{
+    color: var(--color-light);
+}
+
+.temperatures-max{
+    color: var(--color-gray);
+}

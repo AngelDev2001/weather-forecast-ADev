@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=5" />
+
+  <link rel="icon" href="devchallenges.png" />
+
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+
+  <title>Devchallenges</title>
+
+  <script src="https://kit.fontawesome.com/2dfaccd984.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/todaysHighlights.css">
+  <link rel="stylesheet" href="./css/weatherFiveDays.css">
+  <link rel="stylesheet" href="./css/currentTime.css">
+  <link rel="stylesheet" href="./css/main.css">
+
+  <!-- <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+
+    ul {
+      padding-left: 24px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .welcome {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .welcome-text {
+      margin-top: 30vh;
+      font-weight: 500;
+    }
+
+    .welcome-text p {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    .welcome-text h1 {
+      font-size: 1.5rem;
+    }
+
+    .welcome-text a {
+      color: #f7542e;
+    }
+  </style> -->
+
+</head>
+
+<body>
+  <!-- <div class="welcome">
+    <div class="welcome-text">
+      <h1>
+        Welcome to
+        <a href="https://devchallenges.io/" target="_blank">devchallenges.io</a>
+      </h1>
+
+      <p>
+        If you have any questions, don't hesitate to ask on Discord. Here are
+        7 general steps to complete the challenge:
+      </p>
+    </div>
+
+    <ul>
+      <li><b>Step 1:</b> Create a new repository on github</li>
+      <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
+      <li>
+        <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
+      </li>
+      <li><b>Step 4:</b> Complete all user stories</li>
+      <li><b>Step 5:</b> Update README.md</li>
+      <li><b>Step 6:</b> Deploy your app and submit your solution</li>
+      <li>
+        <b>Step 7:</b> Share your solution on Discord, Twitter and other
+        platforms to ask for feedback
+      </li>
+    </ul>
+  </div> -->
+
+  <div class="container">
+    <section class="currentTime">
+      <div class="currentTime-container">
+        <div class="currentTime__header">
+          <button class="currentTime__searchPlaces">Search for places</button>
+          <button class="currentTime__location"><i class="fa-solid fa-location-crosshairs"></i></button>
+        </div>
+        <div class="currentTime__main">
+          <figure class="currentTime__image">
+            <img src="" alt="">
+          </figure>
+    
+          <div class="currentTime__data">
+            <p class="currentTime__degree"><span class="degree"></span>°C</p>
+            <p class="currentTime__description"></p>
+    
+            <div class="dayCity">
+              <p class="currentTime__day"></p>
+              <div class="currentTime__city">
+                <i class="fa-solid fa-location-dot"></i>
+                <p class="city"></p>
+              </div>
+            </div>
+    
+            <section class="searchPlaces">
+              <i class="fa-solid fa-xmark"></i>
+              <form class="searchForm">
+                <div>
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input class="search" type="text" placeholder="search location">
+                </div>
+                <button class="btn__search">Search</button>
+              </form>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="weatherFiveDays">
+      <div class="weatherFiveDays-container"></div>
+    </section>
+    <section class="TodaysHighlights">
+      <div class="TodaysHighlights-container">
+        <h2 class="TodaysHighlights__title">Today's Hightlights </h2>
+        <div class="TodaysHighlights__anex">
+          <div class="wind">
+            <h3 class="wind__title">Wind status</h3>
+            <div class="wind__content">
+              <span class="wind__value"></span>
+              <span class="wind__unidad">mph</span>
+              <div class="wind__orientation">
+                <div class="wind__icon">
+                  <i class="fa-solid fa-location-arrow"></i>
+                </div>
+                <span class="wind__orienName">WSW</span>
+              </div>
+            </div>
+          </div>
+  
+          <div class="humidity">
+            <h3 class="humidity__title">Humidity</h3>
+            <div class="humidity__content">
+              <span class="humidity__value"></span>
+              <span class="humidity__unidad">%</span>
+              <div class="barraProgresoDiv">
+                <div class="barraProgresoMed">
+                  <div class="barraProgreso">
+                    <div class="barraProgresoContent"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="visibility">
+            <h3 class="visibility__title">Visibility</h3>
+            <div class="visibility__content">
+              <span class="visibility__value"></span>
+              <span class="visibility__unidad">miles</span>
+            </div>
+          </div>
+  
+          <div class="pressure">
+            <h3 class="pressure__title">Air Pressure</h3>
+            <div class="pressure__content">
+              <span class="pressure__value"></span>
+              <span class="pressure__unidad">mb</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="./js/openAndClose.js"></script>
+  <script src="./js/FiveDays.js"></script>
+  <script src="./js/cardinalPoints.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
